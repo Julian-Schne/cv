@@ -1,0 +1,510 @@
+
+@media only screen and (max-width: 767px) {
+
+    .pfp{
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    div:not(.perspective,.Name_Header,.subtitle,.sideContent,.sidebar1,.form){
+        /* background-color:  rgb(255, 229, 83); */
+        width: 100%;
+        
+        font-size: small;
+        text-align: center;
+        background-color:rgb(0, 0, 129);
+        color: rgb(243, 243, 150);
+        margin-bottom: 5%;
+        
+        
+    }
+
+    .sidebar1
+    {
+        color: rgb(0, 0, 129);
+        display: flex;
+        flex-direction: row;
+        background-color:rgba(243, 243, 150, 0.322);
+        gap: 5%;
+        /* align-items:; */
+    }
+    .sideContent
+    {
+        width:40%;
+        background-color:  rgb(243, 243, 150);;
+    }
+
+    .form
+    {
+        background-color: rgba(23, 27, 58, 0.459);
+        color: aqua;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+
+    .Name_Header,.subtitle{
+        width: 100%;
+        
+        /* font-size: small; */
+        text-align: center;
+        color: blue;
+        background-color: rgb(243, 243, 150);
+
+    }
+
+
+    html{
+        min-height: 100%;
+        width: 100%;
+        /* overflow-x: hidden; */
+        /* background-image: image-set("background.png"); */
+        /* background-color: yellow; */
+        background-image: linear-gradient(rgba(250, 165, 38, 0.37),rgba(0, 0, 0, 0.925)),image-set("background.png");
+        /* background-color: blue; */
+        /* background-repeat: no-repeat; */
+        background-size:100%;
+        background-attachment: fixed;
+    }
+    body{
+        /* background-color: blue; */
+    
+        /* margin: 0; */
+        padding: 0;         
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px) {
+
+    @keyframes scroll{
+    0%{background-position: right 0px;}
+    100%{background-position: right 1020px;}
+    }
+    
+    body{
+        /* background-color: blue; */
+    
+        padding-left: 0;
+        margin-left: 0;
+        
+        
+    }
+    html{
+        height:100%;
+        /* background-image: image-set("background.png"); */
+        /* background-color: yellow; */
+        background-image: linear-gradient(rgba(250, 165, 38, 0.37),rgba(0, 0, 0, 0.925)),image-set("background.png");
+        /* background-color: blue; */
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        
+    
+    }
+
+    
+    .perspectiveSidebar1
+    {
+
+            animation-name: scroll;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            position:fixed;
+            background-repeat: repeat-y;
+            background-image: image-set("yellow sidebar.png");
+            width: 20%;
+            height:100%;
+            top:0;
+            transform: translateZ(25px) scale(1.3);
+            z-index: 3;
+            margin:0;
+            padding: 0;
+            
+            /* float: right; */
+        }
+    
+
+    .sidebar1:not(.perspectiveSidebar1){
+        /* animation-name: scroll;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal; */
+        position:absolute;
+        /* background-repeat: repeat-y; */
+        /* background-image: image-set("yellow sidebar.png"); */
+        width: 20%;
+        min-height: 100%;
+        top:0;
+        /* transform: translateZ(0); */
+        z-index: 3;
+        
+        /* float: right; */
+    }
+    
+    
+    .sidebar1>div{
+        font-family: "Bauhaus 93";
+        background-color: rgb(255, 231, 164);
+        margin-right: 81px;
+       
+        text-align:center;
+        margin-top: 20%;
+        color: blue;
+        
+       
+        /* float:none; */
+        
+    }
+    
+    .sidebar2{
+
+            animation-name: scroll;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            position:fixed;
+            background-repeat: repeat-y;
+            background-image: image-set("black sidebar.png");
+            width: 26%;
+            min-height: 100%;
+            top:0;
+            /* transform: translateZ(-40px) scale(1.5); */
+            z-index: 3;
+            margin:0;
+            padding: 0;            
+            float: right;
+        }
+            
+    
+    /* .insideBar{
+        width: 75%;
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+    .insideBar>h1
+    {
+        color: white;
+    } */
+    
+    .pfp{
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    
+    .Name_Header{
+    z-index: 4;
+    padding-left: 26%;
+    color:Blue;
+    background-color: rgb(255, 229, 83);
+    
+    }
+    .subtitleimg {
+        vertical-align:middle;
+        /* position:relative; */
+        /* display: inline-block; */
+        /* float:right */
+    }
+    .subtitle{
+        z-index: 4;
+        padding-left: 26%;
+        color:Blue;
+        background-color: rgb(248, 229, 121);
+        }
+    .education,.work
+        {
+            z-index: 4;
+            padding-left: 26%;
+            background-color:rgb(0, 0, 129);
+            color: rgb(248, 229, 121);
+        }
+        .form
+        {
+            background-color: rgba(23, 27, 58, 0.459);
+            color: aqua;
+            display: flex;
+            flex-direction: row;
+            padding-left: 29%;
+            padding-bottom: 5%;
+        }
+
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1023px) and (min-width: 767px) {
+
+@keyframes scroll{
+0%{background-position: right 0px;}
+100%{background-position: right 1020px;}
+}
+
+body{
+    /* background-color: blue; */
+
+    padding-left: 0;
+    margin-left: 0;
+    
+    
+}
+html{
+    height:100%;
+    /* background-image: image-set("background.png"); */
+    /* background-color: yellow; */
+    background-image: linear-gradient(rgba(250, 165, 38, 0.37),rgba(0, 0, 0, 0.925)),image-set("background.png");
+    /* background-color: blue; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+.sidebar1{
+    direction: rtl;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    position:fixed;
+    background-repeat: repeat-y;
+    background-image: image-set("yellow sidebar.png");
+
+    width: 30%;
+    height: 100%;
+    top:0;
+    z-index: 3;
+    /* float: right; */
+}
+
+.sidebar1>div{
+    font-family: "Bauhaus 93";
+    direction: ltr;
+    /* font-size: small; */
+    background-color: rgb(255, 231, 164);
+    margin-right: 81px;
+    padding-left: 5px;
+    text-align: right;
+    margin-top: 1%;
+    color: blue;
+    
+}
+
+
+
+.sidebar2{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    position: fixed;
+    /* overflow-y:hidden; */
+    background-repeat: repeat-y;
+    background-image: image-set("black sidebar.png");
+    /* background-position: right; */
+    width: 35%;
+    height: 100%;
+    top:0;
+    float: right;
+    z-index: 2;
+    
+        
+}
+/* .insideBar{
+    width: 75%;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.insideBar>h1
+{
+    color: white;
+} */
+
+.pfp{
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.Name_Header{
+z-index: 4;
+padding-left: 36%;
+color:Blue;
+background-color: rgb(255, 229, 83);
+}
+.subtitle{
+    z-index: 4;
+    padding-left: 36%;
+    color:Blue;
+    background-color: rgb(248, 229, 121);
+    }
+
+    .education,.work
+    {
+        padding-left: 36%;
+        background-color:rgb(0, 0, 129);
+        color: rgb(248, 229, 121);
+    }
+    .form
+    {
+        background-color: rgba(23, 27, 58, 0.459);
+
+        padding-left: 36%;
+        padding-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
